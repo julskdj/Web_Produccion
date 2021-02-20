@@ -19,14 +19,13 @@
           >
           <nav class="navigation">
             <ul>
+              <li><a href="/index.html">Inicio</a></li>  
               <li><a href="/html/destinos.html">Destinos</a></li>
               <li><a href="/html/paquetes.html">Paquetes</a></li>
               <li><a href="/html/convenios.html">Convenios</a></li>
-              <li><a href="/html/gui.html">GUI</a></li>
-              <li><a href="/html/sucursales.html">Sucursales</a></li>
-              <li><a href="/html/trabajeconnosotros.html">Trabaje con Nosotros</a></li>
+              <li><a href="/html/Sucursales.html">Sucursales</a></li>
               <li><a href="/html/contactenos.html">Contactenos</a></li>
-              <li><a href="/html/login.html">Login</a></li>
+              <li><a href="/html/Login.html">Login</a></li>
             </ul>
           </nav>
         </div>
@@ -35,57 +34,94 @@
 
     <main class="main">
       <div class="container">
-        <h1 class="titulo">Agencia de viajes</h1>
+        <h1 class="titulo">Trabaje con Nosotros</h1>
 
-        <p>
-          Somos una agencia de viajes a sitios turisrticos en todo el mundo,
-          nuestro catalogo va desde destinos nacionales a destinos
-          internacionales, tenemos distintos planes en nuestro catalogo y
-          poseemos alianza con diversos hoteles
-        </p>
+        <p>Si quiere trabajar con nosotros por favor dejenos sus datos para que podemos contactarlo con fines laborales</p>
 
-        <p>
-          Tenemos como objetivo brindarte la mejor experiencia para poder
-          comprar tu paquete de viaje hacia tu destino favorito, poco a poco
-          vamos ampliando mucho mas nuestro catalogo para que puedas disfrutar
-          de mas destinos para escoger
-        </p>
+        <form class="formulario">
 
-        <p>
-          Tambien estamos formando alianzas con cruceros para proximamente
-          ofrecerte este paquete de viaje para que puedas disfrutar por el
-          caribe
-        </p>
+            <h3>Favor ingrese sus datos para que podamos contactarlo</h3>
+  
+            <input
+              class="controls"
+              type="text"
+              name="nombre"
+              id="nombre1"
+              placeholder="Ingrese su Primer Nombre"
+            />
+  
+            <label for=""></label>
+  
+            <input
+              class="controls"
+              type="text"
+              name="nombre"
+              id="nombre2"
+              placeholder="Ingrese su Segundo Nombre"
+            />
+  
+            <input
+              class="controls"
+              type="text"
+              name="apellido1"
+              id="apellido1"
+              placeholder="Ingrese su Primer Apellido"
+            />
+  
+            <label for=""></label>
+  
 
-        <p>
-          Si tienes alguna duda o alguna cuestion, en la barra de navegacion
-          tienes una opcion para ir a la pagina de contacto, o en el pie de
-          pagia tienes nuestras redes sociales y correo electronico
-        </p>
+            <input
+              class="controls"
+              type="text"
+              name="apellido2"
+              id="apellido2"
+              placeholder="Ingrese su Segundo Apellido"
+            />
+  
 
-        <div class="video">
-          <iframe
-            width="280"
-            height="300"
-            src="https://www.youtube.com/embed/4MkVwZaJCF4"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+            <input
+            class="controls"
+            type="text"
+            name="cedula"
+            id="cedula"
+            placeholder="Ingrese su cedula"
+            pattern="[0-9]+"
+            />
+            
+            <label for=""></label>
 
-        <div class="galeria">
-          <h1>Galeria de imagenes</h1>
-          <span class="linea"></span>
-          <section class="galeria">
+            <input
+              class="controls"
+              type="email"
+              name="correo"
+              id="correo"
+              placeholder="Ingrese su Correo"
+            />  
 
-            <table class="tabla">
-              <tr><th><a href=""><img src="/Img/uno.jpg" alt="" /></a></th><th><a href=""><img src="/Img/dos.jpg" alt="" /></a></th><th><a href=""><img src="/Img/tres.jpg" alt="" /></a></th></tr>
-              <tr><th><a href=""><img src="/Img/cuatro.jpg" alt="" /></a></th><th><a href=""><img src="/Img/cinco.jpg" alt="" /></a></th><th><a href=""><img src="/Img/seis.jpg" alt="" /></a></th></tr>
-              
-            </table>
+            <select class="selects" name="nivel" id="nivel">
+                <option value="Elegir">Elegir Nivel Academico</option>
+                <option value="Bachiller">Bachiller</option>
+                <option value="Tecnico Laboral">Tecnico Laboral</option>
+                <option value="Tecnico Profesional">Tecnico Profesional</option>
+                <option value="Tecnologo">Tecnologo</option>
+                <option value="Profesional Universitario">Profesional Universitario</option>
+                <option value="Especializacion">Especializacion en su area</option>
+                <option value="Maestria">Maestria</option>
+                <option value="Doctorado">Doctorado</option>
+            </select>
 
-          </section>
+
+            <p></p>
+
+            <label class="titulotex" for="">Favor coloque su nivel academico</label>
+
+            <textarea name="area" id="area" cols="30" rows="10"></textarea>
+
+            <div>
+                <button class="botons" onclick="validarFormulario()">Enviar</button>
+            </div>
+
         </div>
       </div>
     </main>
